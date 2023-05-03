@@ -11,7 +11,7 @@ No special requirements; note that this role requires root access, so either run
 ```yaml
 - hosts: database
   roles:
-    - role: geerlingguy.mysql
+    - role: dsolopenkov.mysql
       become: yes
 ```
 
@@ -215,7 +215,7 @@ If you have only installed `ansible-core`, be sure to require `community.mysql` 
       vars_files:
         - vars/main.yml
       roles:
-        - { role: geerlingguy.mysql }
+        - { role: dsolopenkov.mysql }
 
 *Inside `vars/main.yml`*:
 
